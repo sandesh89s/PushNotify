@@ -43,6 +43,7 @@
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/img/anfLogo.png \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/img/logo.png \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/js/index.js \
+/Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/js/notify.js \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/js/PushNotification.js \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/plugins/com.phonegap.plugins.PushPlugin \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/plugins/com.phonegap.plugins.PushPlugin/www \
@@ -57,6 +58,10 @@
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/tizen \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/webos \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/windows-phone \
+/Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/anf36.png \
+/Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/anf48.png \
+/Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/anf72.png \
+/Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/anf96.png \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/icon-36-ldpi.png \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/icon-48-mdpi.png \
 /Users/sandesh/Documents/Mobile Apps/hello/platforms/android/assets/www/res/icon/android/icon-72-hdpi.png \

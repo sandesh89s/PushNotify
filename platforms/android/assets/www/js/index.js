@@ -21,6 +21,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        this.receivedEvent()
         this.onDeviceReady();
     },
     // Bind Event Listeners
@@ -36,6 +37,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
        // app.receivedEvent('deviceready');
+        var pushPlugin = window.plugins.pushNotification;
+        pushPlugin.register(app.successHandler, app.errorHandler,{"senderID":"324148190184","ecb":"app.onNotificationGCM"});
         console.log('reached here');
         db = window.openDatabase("Database","1.0","My DB",2*1024*1024);
         db.transaction(createDB,errorDB,successDB);
@@ -46,6 +49,8 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+
+
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -55,8 +60,7 @@ var app = {
 
         console.log('Received Event: ' + id);
 
-        var pushPlugin = window.plugins.pushNotification;
-        pushPlugin.register(app.successHandler, app.errorHandler,{"senderID":"324148190184","ecb":"app.onNotificationGCM"});
+
     },
     successHandler: function(result) {
         alert('Callback Success! Result = '+result);

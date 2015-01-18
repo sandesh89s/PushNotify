@@ -19,6 +19,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="PushPlugin">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
     <name>HelloWorld</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -28,7 +31,7 @@
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
-    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="phonegap-version" value="3.6.3" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
@@ -61,11 +64,12 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-    <icon src="www/img/anf_converted.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+    <gap:plugin name="com.phonegap.plugins.pushplugin" />
+    <icon src="anf_converted_icon.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/anf36.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/anf48.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/anf72.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/anf96.png" />
     <icon gap:platform="blackberry" src="www/res/icon/blackberry/icon-80.png" />
     <icon gap:platform="blackberry" gap:state="hover" src="www/res/icon/blackberry/icon-80.png" />
     <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
@@ -87,7 +91,4 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
-    <feature name="PushPlugin">
-        <param name="ios-package" value="PushPlugin" />
-    </feature>
 </widget>

@@ -46,7 +46,7 @@ PushNotification.prototype.unregister = function(successCallback, errorCallback,
         }
 
         cordova.exec(successCallback, errorCallback, "PushPlugin", "showToastNotification", [options]);
-    }
+    };
 // Call this to set the application icon badge
 PushNotification.prototype.setApplicationIconBadgeNumber = function(successCallback, errorCallback, badge) {
     if (errorCallback == null) { errorCallback = function() {}}
